@@ -1,0 +1,339 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+:root {
+  --laser-text-color: #ff1177;
+  --random-color: #0f0;
+  --random-shadow-color: #f0f;
+}
+
+
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 9999;
+  font-size: 22px;
+  bottom: 0;
+  transform: translate(calc(50vw - 50%), 0%);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1vh;
+}
+
+
+.Skills {
+  z-index: 10;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: clamp(0.8rem, 1.4vw, 10rem);
+
+  color: white;
+  text-align: center;
+  position: static;
+  overflow-wrap: break-word;
+  pointer-events: none;
+  text-shadow: 0 0 30px var(--text-shadow-color), 0 0 30px var(--text-shadow-color);
+}
+
+.Experience {
+  z-index: 10;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: clamp(0.8rem, 1.4vw, 10rem);
+  margin: 5%;
+  margin-top: 10%;
+  color: white;
+  text-align: center;
+  position: static;
+  overflow-wrap: break-word;
+  pointer-events: none;
+  text-shadow: 0 0 30px var(--text-shadow-color), 0 0 30px var(--text-shadow-color);
+}
+
+.sleek-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+}
+
+.contact:hover {
+  text-shadow: 0 0 10px #ffffff, 0 0 10px #ffffff;
+}
+
+.sleek-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2rem, 6vw, 6rem);
+  font-weight: 50;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow-wrap: break-word;
+}
+
+.subtitle-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(0.8rem, 1.2vw, 1.4rem);
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 1px;
+  overflow-wrap: break-word;
+  margin-bottom: 1rem;
+}
+
+.contacts {
+  text-align: center;
+  margin-left: 30px;
+}
+
+.contact{
+    display: inline-block;
+    margin-right: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    padding: 1px;
+    overflow-wrap: break-word;
+    margin-bottom: 1rem;
+
+}
+
+
+
+@media (max-width: 768px) {
+  .sleek-text {
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  }
+
+  .subtitle-text {
+    font-size: clamp(0.7rem, 1vw, 1rem);
+  }
+
+  .contact{
+    font-size: clamp(0.7rem, 1vw, 1rem);
+  }
+}
+
+@media (max-height: 450px) {
+  .sleek-text-container {
+    grid-template-rows: auto auto;
+  }
+
+  .sleek-text {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle-text {
+    font-size: clamp(0.6rem, 0.8vw, 0.8rem);
+    margin-top: 10px;
+    margin-bottom: 0.5rem;
+  }
+  .contact{
+    font-size: clamp(0.6rem, 0.8vw, 0.8rem);
+    margin-top: 10px;
+    margin-bottom: 0.5rem;
+  }
+}
+  
+  .text-main.laser-animation {
+    animation: laser 4s linear, text-effect 0.5s linear;
+  }
+  
+  
+  
+  .text-main::before,
+  .text-main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../media/laser-beam.png"); /* Replace with your image URL */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;
+    z-index: 2;
+
+      filter: hue-rotate(var(--laser-hue));
+  }
+  
+  .text-main.laser-animation::before,
+  .text-main.laser-animation::after {
+    animation: laser 0.55s linear; /* Remove "infinite" */
+  }
+
+  @keyframes text-effect {
+    0%, 100% {
+      color: white;
+    }
+    50% {
+      color: var(--laser-text-color);
+    }
+  }
+  
+  @keyframes laser {
+    0% {
+      left: -100%;
+      opacity: 1;
+      transform: scaleX(0);
+    }
+    25% {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+    75% {
+      opacity: 0.5;
+      transform: scaleX(1);
+    }
+    100% {
+      left: 100%;
+      opacity: 0;
+      transform: scaleX(0);
+    }
+  }
+  
+  
+.sleek-text::before,
+.sleek-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.sleek-text::before {
+  color: #ff1177;
+  mix-blend-mode: multiply;
+  opacity: 0;
+  animation: glitch-1 2s infinite;
+  font-weight: bolder;
+}
+
+.sleek-text::after {
+  color: var(--random-color);
+  mix-blend-mode: screen;
+  opacity: 1;
+  text-shadow: 0 0 5px var(--random-shadow-color), 0 0 4px var(--random-shadow-color), 0 0 4px var(--random-shadow-color) ;
+  animation: glitch-2 4s infinite;
+}
+  
+
+@keyframes glitch-1 {
+  0% {
+    clip-path: inset(0% 0% 100% 0%);
+    transform: translate(0, 0);
+  }
+  10% {
+    clip-path: inset(25% 0% 10% 0%);
+    transform: translate(5px, 0);
+  }
+  20% {
+    clip-path: inset(10% 0% 60% 0%);
+    transform: translate(-5px, 0);
+  }
+  30% {
+    clip-path: inset(40% 0% 20% 0%);
+    transform: translate(3px, 0);
+  }
+  40% {
+    clip-path: inset(20% 0% 40% 0%);
+    transform: translate(-3px, 0);
+  }
+  50% {
+    clip-path: inset(60% 0% 20% 0%);
+    transform: translate(2px, 0);
+  }
+  60% {
+    clip-path: inset(30% 0% 20% 0%);
+    transform: translate(-2px, 0);
+  }
+  70% {
+    clip-path: inset(50% 0% 10% 0%);
+    transform: translate(1px, 0);
+  }
+  80% {
+    clip-path: inset(10% 0% 30% 0%);
+    transform: translate(-1px, 0);
+  }
+  90% {
+    clip-path: inset(20% 0% 40% 0%);
+    transform: translate(0, 0);
+  }
+  100% {
+    clip-path: inset(0% 0% 100% 0%);
+    transform: translate(0, 0);
+    
+  }
+}
+
+@keyframes glitch-2 {
+  0% {
+    clip-path: inset(100% 0% 0% 0%);
+    transform: translate(0, 0);
+  }
+  10% {
+    clip-path: inset(60% 0% 10% 0%);
+    transform: translate(-5px, 0);
+  }
+  20% {
+    clip-path: inset(30% 0% 40% 0%);
+    transform: translate(5px, 0);
+  }
+  30% {
+    clip-path: inset(50% 0% 10% 0%);
+    transform: translate(-3px, 0);
+  }
+  40% {
+    clip-path: inset(20% 0% 50% 0%);
+    transform: translate(3px, 0);
+  }
+  50% {
+    clip-path: inset(40% 0% 20% 0%);
+    transform: translate(-2px, 0);
+  }
+  60% {
+    clip-path: inset(10% 0% 60% 0%);
+    transform: translate(2px, 0);
+  }
+  70% {
+    clip-path: inset(30% 0% 10% 0%);
+    transform: translate(-1px, 0);
+  }
+  80% {
+    clip-path: inset(20% 0% 40% 0%);
+    transform: translate(1px, 0);
+  }
+  90% {
+    clip-path: inset(10% 0% 20% 0%);
+    transform: translate(0, 0);
+  }
+  100% {
+    clip-path: inset(100% 0% 0% 0%);
+    transform: translate(0, 0);
+
+  }
+}
