@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.13f71099.css",
+    "main.js": "/static/js/main.a69e96a3.js",
+    "static/media/covid.mp4": "/static/media/covid.fd1ecf0f68fe6aafbff5.mp4",
+    "static/media/beatslasher.mp4": "/static/media/beatslasher.d257ac34489fd0c5e69f.mp4",
+    "static/media/SSVEP.mp4": "/static/media/SSVEP.6c628fd41c59ecf41611.mp4",
+    "static/media/flappybird2.mp4": "/static/media/flappybird2.3a732484885cb6aec013.mp4",
+    "static/media/naruto.mp4": "/static/media/naruto.f897d5214b4c719f2c04.mp4",
+    "static/media/React.png": "/static/media/React.8a6fc0a24a800d1e0f4a.png",
+    "static/media/python.png": "/static/media/python.82efb64f8698a267f8bf.png",
+    "static/media/threejs.png": "/static/media/threejs.7c862b1bad8407d307b0.png",
+    "static/media/node.png": "/static/media/node.fc3bd1ec69d7a50e685a.png",
+    "static/media/BASH.png": "/static/media/BASH.c8dfb1563816a3e8781a.png",
+    "static/media/Angular.png": "/static/media/Angular.b6d2a9dec3e43e0ffb95.png",
+    "static/media/abogo.jpeg": "/static/media/abogo.46902639022320a3d5a8.jpeg",
+    "static/media/Cpp.png": "/static/media/Cpp.d8d9a2f879d60721c1ac.png",
+    "static/media/reuters.jpg": "/static/media/reuters.95762ca5bd8670ac2a60.jpg",
+    "static/media/CSharp.png": "/static/media/CSharp.5a45dfbe7dbab84acddf.png",
+    "static/media/laser-beam.png": "/static/media/laser-beam.5d1000aaa90449317531.png",
+    "static/media/cn.jpg": "/static/media/cn.f78483798f102ce629c7.jpg",
+    "static/media/infinera.jpg": "/static/media/infinera.b140842e3c5feea5fe4f.jpg",
+    "static/media/TS.png": "/static/media/TS.52ea0bc40ba11d507e7d.png",
+    "static/media/Linux.png": "/static/media/Linux.24a26a2ec29c2e987464.png",
+    "static/media/smartARM.png": "/static/media/smartARM.a2d5407e204733bd98e3.png",
+    "static/media/C_Logo.png": "/static/media/C_Logo.bbbbbabc8c191bfb99bf.png",
+    "static/media/webdev.png": "/static/media/webdev.85e6eee999d990d1d147.png",
+    "static/media/dotNET.png": "/static/media/dotNET.2c9ca9e4a5664a0908ab.png",
+    "index.html": "/index.html",
+    "main.13f71099.css.map": "/static/css/main.13f71099.css.map",
+    "main.a69e96a3.js.map": "/static/js/main.a69e96a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13f71099.css",
+    "static/js/main.a69e96a3.js"
+  ]
+}
