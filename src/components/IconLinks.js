@@ -14,7 +14,7 @@ function IconLinks() {
       <a href="https://github.com/yaxan" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGithub} className="icon" />
       </a>
-      <a href="https://yazan.ca/Yazan_Masoud_Resume.pdf" target="_blank" rel="noopener noreferrer">
+      <a href="%PUBLIC_URL%//Yazan_Masoud_Resume.pdf" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faFileAlt} className="icon" />
       </a>
     </div>
