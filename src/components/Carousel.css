@@ -95,6 +95,7 @@
 .carousel-item img,
 .carousel-item video {
   max-width: 100%;
+  width: 100%;
   height: auto;
   object-fit: contain;
   flex-grow: 1;
