@@ -117,7 +117,7 @@ function App() {
             <WorkExperienceTimeline />
           </div>
 
-          <div classname='footer-container' style={{width:'100vw',   height: '15vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center'}}> 
+          <div style={{width:'100vw',   height: '15vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center'}}> 
             <WaveyFooter />
   
           </div>

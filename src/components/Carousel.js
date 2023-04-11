@@ -81,7 +81,7 @@ const Carousel = ({ items }) => {
         onMouseLeave={resetTilt}
       >
         {item.video ? (
-          <video src={item.video} alt={item.title} draggable={false} muted loop autoPlay />
+          <video src={item.video} alt={item.title} draggable={false} controls muted loop autoPlay />
         ) : (
           <img src={item.image} alt={item.title} draggable={false} />
         )}
