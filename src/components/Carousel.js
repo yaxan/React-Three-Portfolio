@@ -13,10 +13,18 @@ function hexToRGBA(hex, alpha = 1) {
 const Carousel = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(2);
   const [dragStart, setDragStart] = useState(null);
+  const [isDragged, setIsDragged] = useState(false);
+
   const width = 400; // Width of each card
   const gap = 30; // Gap between cards
   const itemRefs = useRef([]);
   const { color } = React.useContext(ColorContext);
+
+  const handleClick = (index) => {
+    console.log("handleClick called with index:", index);
+    setActiveIndex(index);
+  };
+  
 
   useEffect(() => {
     itemRefs.current = itemRefs.current.slice(0, items.length);
@@ -34,15 +42,19 @@ const Carousel = ({ items }) => {
       }
       setDragStart(null);
     }
+    setIsDragged(false);
   };
+  
 
   const handleDragMove = (clientX) => {
     if (dragStart !== null) {
       const currentItem = itemRefs.current[activeIndex];
       const delta = clientX - dragStart;
       currentItem.style.transform = `translateX(${delta}px) scale(1.1)`;
+      setIsDragged(true);
     }
   };
+  
 
   const renderItem = (item, index) => {
     const isActive = index === activeIndex;
@@ -72,14 +84,20 @@ const Carousel = ({ items }) => {
       <div
         key={index}
         ref={(el) => (itemRefs.current[index] = el)}
-        className={`carousel-item${isActive ? ' active' : ''}`}
-        style={{
-          transform: `perspective(800px) translateX(${offset}px) scale(${isActive ? 1.1 : 0.9}) rotateY(${isActive ? 0 : tiltDirection}deg)`,
-          zIndex: zIndex,
-        }}
-        onMouseMove={tilt}
-        onMouseLeave={resetTilt}
-      >
+      className={`carousel-item${isActive ? ' active' : ''}`}
+      style={{
+        transform: `perspective(800px) translateX(${offset}px) scale(${isActive ? 1.1 : 0.9}) rotateY(${isActive ? 0 : tiltDirection}deg)`,
+        zIndex: zIndex,
+      }}
+      onMouseMove={tilt}
+      onMouseLeave={resetTilt}
+      onClick={() => {
+        if (!isDragged) {
+          handleClick(index);
+        }
+      }}
+      
+    >
         {item.video ? (
           <video src={item.video} alt={item.title} draggable={false} controls muted loop autoPlay />
         ) : (
