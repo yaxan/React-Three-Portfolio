@@ -21,7 +21,6 @@ const Carousel = ({ items }) => {
   const { color } = React.useContext(ColorContext);
 
   const handleClick = (index) => {
-    console.log("handleClick called with index:", index);
     setActiveIndex(index);
   };
   
