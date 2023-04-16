@@ -46,22 +46,6 @@ canvas {
 
 
 
-.foot {
-  z-index: 10;
-  user-select: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: clamp(0.8rem, 1.4vw, 10rem);
 
-  color: white;
-  text-align: center;
-  position: static;
-
-  pointer-events: none;
-  background-color: white; /* Change this line */
-  text-align: center;
-  padding: 10px 0;
-  z-index: 9999; /* Add this line */
-}
 
 
