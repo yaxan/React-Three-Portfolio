@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build && cp CNAME build/",
+    "predeploy": "npm run build && npx copyfiles CNAME build/",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "gh-pages": "^5.0.0"
   }
 }
