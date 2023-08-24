@@ -11,10 +11,20 @@ import reuters from '../media/reuters.jpg'
 import cox from '../media/cox.jpg'
 import cn from '../media/cn.jpg'
 import hdsb from '../media/hdsb.jpg'
+import bearworks from '../media/bearworks.png'
 
 const jobs = [
+    // Add more jobs here
     {
-      title: 'Embedded Software Developer',
+      title: 'Software Engineer Intern',
+      company: 'Bearworks',
+      startDate: 'May 2023',
+      endDate: 'Sept 2023',
+      description: 'Worked alongside founders to build startup from inception, guiding product development, evaluating different technologies/vendors, leading AI tooling efforts, and making technical architecture decisions landing in production',
+      Icon: bearworks,
+    },
+    {
+      title: 'Embedded Software Developer Intern',
       company: 'smartARM',
       startDate: 'Mar 2023',
       endDate: 'Present',
@@ -22,7 +32,7 @@ const jobs = [
       Icon: smartARM,
     },
     {
-      title: 'Software Development Engineer',
+      title: 'Software Development Engineer Intern',
       company: 'Infinera',
       startDate: 'Sept 2022',
       endDate: 'Dec 2022',
@@ -30,7 +40,7 @@ const jobs = [
       Icon: infinera,
     },
     {
-      title: 'Software Developer',
+      title: 'Software Developer Intern',
       company: 'Thomson Reuters',
       startDate: 'Jan 2022',
       endDate: 'Apr 2022',
@@ -38,7 +48,7 @@ const jobs = [
       Icon: reuters,
     },
     {
-        title: 'Software Engineer',
+        title: 'Software Engineer Intern',
         company: 'Cox Automotive Inc.',
         startDate: 'May 2021',
         endDate: 'Sept 2021',
@@ -54,14 +64,13 @@ const jobs = [
         Icon: cn,
     },
       {
-        title: 'Full-Stack Developer',
+        title: 'Full-Stack Development Co-op',
         company: 'Halton District School Board',
         startDate: 'Sept 2019',
         endDate: 'Feb 2020',
         description: 'Worked as a junior full-stack web developer in creating a web application to audit third party application use of staff G-Suite accounts by leveraging Google APIs replacing the manual report system for 6246 staff members',
         Icon: hdsb,  
     },
-    // Add more jobs here
   ];
 
 
