@@ -146,19 +146,19 @@ const FloatingShapes = ({ decals }) => {
     const handleResize = () => {
       setDimensions({
         width: window.innerWidth,
-        height: window.innerHeight * 0.6,
+        height: window.innerHeight *0.8,
       });
 
       // Update gridSize and gridSpacing based on window width
       if (window.innerWidth < 768) {
         setGridSize(4);
         setGridSpacing(1.5);
-        setOffsetY(0.5);
+        setOffsetY(0);
         setOffsetX(0.8);
       } else {
-        setGridSize(5);
+        setGridSize(6);
         setGridSpacing(2.5);
-        setOffsetY(4);
+        setOffsetY(5);
         setOffsetX(1.3);
       }
     };

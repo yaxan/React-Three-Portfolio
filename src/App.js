@@ -23,6 +23,9 @@ import dotNET from './media/dotNET.png'
 import TS from './media/TS.png'
 import node from './media/node.png'
 import threejslogo from './media/threejs.png'
+import AWS from './media/aws.png'
+import kubernetes from './media/kubernetes.png'
+import redis from './media/redis.png'
 
 const decals = [
   { url: cpp, text: "C++"},
@@ -40,6 +43,9 @@ const decals = [
   { url: dotNET, text: ".NET" },
   { url: TS, text: "TypeScript" },
   { url: node, text: "Node.js" },
+  { url: AWS, text: "AWS" },
+  { url: kubernetes, text: "Kubernetes" },
+  { url: redis, text: "Redis" },
 
   // Add more decals here
 ];
@@ -109,10 +115,6 @@ function App() {
           <FloatingShapes decals={decals} />
           </div>
 
-
-          <div className='Experience' style={{ '--text-shadow-color': hexToRGBA(`#${color.toString(16).padStart(6, '0')}`, 1) }}>
-            <span>Experience</span>
-          </div>
           <div style={{zIndex: 10, width: '100%', height: '100%'}}> 
             <WorkExperienceTimeline />
           </div>

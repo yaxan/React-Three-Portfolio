@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -12,6 +12,15 @@ import cox from '../media/cox.jpg'
 import cn from '../media/cn.jpg'
 import hdsb from '../media/hdsb.jpg'
 import bearworks from '../media/bearworks.png'
+import ColorContext from './ColorContext';
+
+function hexToRGBA(hex, alpha = 1) {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
 
 const jobs = [
     // Add more jobs here
@@ -75,8 +84,14 @@ const jobs = [
 
 
   const WorkExperienceTimeline = () => {
+    const { color } = useContext(ColorContext);
+
     return (
       <div className={styles.timeline}>
+        <div className='Experience' style={{ '--text-shadow-color': hexToRGBA(`#${color.toString(16).padStart(6, '0')}`, 1) }}>
+          <span>Experience</span>
+        </div>
+        
         <VerticalTimeline animate={true} layout="1-column">
           {jobs.map((job, index) => (
             <VerticalTimelineElement
