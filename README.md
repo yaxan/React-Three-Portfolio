@@ -2,6 +2,8 @@
 
 https://yazan.ca/
 
+DISCLAIMER: Since making this I've actually worked in React, this repo is a nightmare. I still think the website looks cool though, maybe I'll refactor it one day.
+
 I made this website as an experiment with GPT4 to see if it could help someone with no experience using React and Threejs build an entire 3D site from the ground-up.
 The design is a little obnoxious and overstimulating, but I wanted to play around with Threejs and other frontend tools and have fun with what I could create using GPT4.
 
