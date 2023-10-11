@@ -59,7 +59,7 @@ function hueToRGB(hue, offset = 0) {
 
 function Name({ text }) {
   const textOptions = [
-    "Biomedical Engineering @ UWaterloo",
+    "Engineering @ UWaterloo",
     "Software Developer | Embedded @ smartARM",
     "Duck Father",
   ];
