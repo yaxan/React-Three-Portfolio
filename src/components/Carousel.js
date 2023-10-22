@@ -11,7 +11,7 @@ function hexToRGBA(hex, alpha = 1) {
 }
 
 const Carousel = ({ items }) => {
-  const [activeIndex, setActiveIndex] = useState(2);
+  const [activeIndex, setActiveIndex] = useState(3);
   const [dragStart, setDragStart] = useState(null);
   const [isDragged, setIsDragged] = useState(false);
 

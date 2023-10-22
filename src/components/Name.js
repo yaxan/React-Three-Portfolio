@@ -8,6 +8,8 @@ import beatslasher from '../media/beatslasher.mp4'
 import abogo from '../media/abogo.jpeg'
 import naruto from '../media/naruto.mp4'
 import covid from '../media/covid.mp4'
+import addressbook from '../media/addressbook.png'
+import cugraph from '../media/cugraph.png'
 
 
 function getRandomColor() {
@@ -65,30 +67,37 @@ function Name({ text }) {
   ];
   const portfolioItems = [
     {
+      image: addressbook,
+      title: 'Address Book',
+      description: 'Reactive address book to search through contacts',
+      link: "https://github.com/yaxan/address_book",
+      tech: "Angular, TypeScript, HTML, CSS"
+    },
+    {
       video: covid,
       title: 'Social Distance Simulator',
-      description: 'Constructed a computer game using Ubisoft\'s SFML-based API HackersNest at Hack the North to gain practical experience in C++',
+      description: 'Computer game using Ubisoft\'s SFML-based API HackersNest at Hack the North to gain practical experience in C++',
       link: "https://devpost.com/software/social-distance-simulator",
       tech: "C++, SFML"
     },
     {
       video: SSVEP,
       title: 'SSVEP Brain Wave Communication',
-      description: 'Designed and built a Brain-Computer Interface to process process different frequency brain waves to communicate verbally',
+      description: 'Brain-Computer Interface to process process different frequency brain waves to communicate verbally',
       link: 'https://github.com/yaxan/EEG-gaming-and-speech',
       tech: "Python, Multiprocessing, Signal Processing, Analog Circuitry, Raspberry Pi, OpenAI API"
     },
     {
       video: flappybird,
       title: 'Brain Wave Flappy Bird',
-      description: 'Designed and built a Brain-Computer Interface to process alpha and beta waves and allow user to play Flappy Bird with their brain.',
+      description: 'Brain-Computer Interface to process alpha and beta waves and allow user to play Flappy Bird with their brain.',
       link: 'https://github.com/yaxan/EEG-gaming-and-speech',
       tech: "Python, Signal Processing, Analog Circuitry, Raspberry Pi"
     },
     {
       video: naruto,
       title: 'Naruto Handseal Classification',
-      description: 'Designed a live camera image classifier for hand gestures using transfer learning based on anime series "Naruto"',
+      description: 'Live camera image classifier for hand gestures using transfer learning based on anime series Naruto',
       link: "https://github.com/yaxan/Naruto_Handsign_Classification",
       tech: "Python, OpenCV, TensorFlow, Transfer Learning"
     },
@@ -107,7 +116,13 @@ function Name({ text }) {
       link: "https://github.com/yaxan/BeatSlasher",
       tech: "C#, Unity"
     },
-
+    {
+      image: cugraph,
+      title: 'Facebook Data cuGraph Visualization',
+      description: 'GPU-accelerated graph analytics through RAPIDS cuGraph on a Facebook dataset',
+      link: "https://github.com/yaxan/Facebook_RAPIDS_cuGraph",
+      tech: "Python, CUDA, RAPIDS cuGraph, NetworkX, MatPlotLib"
+    },
     // Add more items as needed
   ];
   
