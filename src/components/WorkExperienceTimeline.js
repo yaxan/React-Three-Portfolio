@@ -12,6 +12,7 @@ import cox from '../media/cox.jpg'
 import cn from '../media/cn.jpg'
 import hdsb from '../media/hdsb.jpg'
 import bearworks from '../media/bearworks.png'
+import extend from '../media/extend.png'
 import ColorContext from './ColorContext';
 
 function hexToRGBA(hex, alpha = 1) {
@@ -26,6 +27,14 @@ const jobs = [
     // Add more jobs here
     {
       title: 'Software Engineer Intern',
+      company: 'Extend',
+      startDate: 'Jan 2024',
+      endDate: 'Present',
+      description: 'Full stack development for the Core Platform team, mainly backend engineering',
+      Icon: extend,
+    },
+    {
+      title: 'Software Engineer Intern',
       company: 'Bearworks',
       startDate: 'May 2023',
       endDate: 'Sept 2023',
@@ -33,11 +42,11 @@ const jobs = [
       Icon: bearworks,
     },
     {
-      title: 'Embedded Software Developer Intern',
+      title: 'Embedded Software Developer',
       company: 'smartARM',
       startDate: 'Mar 2023',
-      endDate: 'Present',
-      description: 'Designing and developing upper-limb prostheses controls system and EMG signal processing code in Python',
+      endDate: 'Aug 2023',
+      description: 'Worked with founders to enable an AI-powered prosthetic arm startup to progress from concept to functional prototype by architecting a control system using Python to process EMG signals',
       Icon: smartARM,
     },
     {
