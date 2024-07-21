@@ -14,6 +14,7 @@ import hdsb from '../media/hdsb.jpg'
 import bearworks from '../media/bearworks.png'
 import extend from '../media/extend.png'
 import ColorContext from './ColorContext';
+import centml from '../media/centml.png'
 
 function hexToRGBA(hex, alpha = 1) {
   const r = parseInt(hex.slice(1, 3), 16);
@@ -27,10 +28,18 @@ const jobs = [
     // Add more jobs here
     {
       title: 'Software Engineer Intern',
+      company: 'CentML',
+      startDate: 'May 2024',
+      endDate: 'Present',
+      description: 'Platform team, working on model parallelism and latency prediction using PyTorch graphs',
+      Icon: centml,
+    },
+    {
+      title: 'Software Engineer Intern',
       company: 'Extend',
       startDate: 'Jan 2024',
-      endDate: 'Present',
-      description: 'Full stack development for the Core Platform team, mainly backend engineering',
+      endDate: 'Apr 2024',
+      description: 'Full stack development for the Core Platform team',
       Icon: extend,
     },
     {

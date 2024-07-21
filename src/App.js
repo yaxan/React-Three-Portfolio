@@ -14,7 +14,7 @@ import python from './media/python.png'
 import Git from './media/Git.png'
 import Linux from './media/Linux.png'
 import webdev from './media/webdev.png'
-import BASH from './media/BASH.png'
+import pytorch from './media/pytorch.png'
 import Angular from './media/Angular.png'
 import Reactlogo from './media/React.png'
 import SQL from './media/SQL.png'
@@ -25,7 +25,7 @@ import node from './media/node.png'
 import threejslogo from './media/threejs.png'
 import AWS from './media/aws.png'
 import kubernetes from './media/kubernetes.png'
-import redis from './media/redis.png'
+import cuda from './media/cuda.png'
 
 const decals = [
   { url: cpp, text: "C++"},
@@ -36,7 +36,7 @@ const decals = [
   { url: threejslogo, text: "Three.js" },
   { url: Linux, text: "Linux Development" },
   { url: Git, text: "Git" },
-  { url: BASH, text: "Bash Scripting" },
+  { url: pytorch, text: "PyTorch" },
   { url: Angular, text: "Angular" },
   { url: Reactlogo, text: "React" },
   { url: SQL, text: "SQL" },
@@ -45,7 +45,7 @@ const decals = [
   { url: node, text: "Node.js" },
   { url: AWS, text: "AWS" },
   { url: kubernetes, text: "Kubernetes" },
-  { url: redis, text: "Redis" },
+  { url: cuda, text: "CUDA" },
 
   // Add more decals here
 ];
