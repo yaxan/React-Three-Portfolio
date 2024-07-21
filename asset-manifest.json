@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.762eca6c.css",
-    "main.js": "/static/js/main.56cc652a.js",
+    "main.css": "/static/css/main.6efb98c1.css",
+    "main.js": "/static/js/main.d6476b13.js",
     "static/media/covid.mp4": "/static/media/covid.fd1ecf0f68fe6aafbff5.mp4",
     "static/media/beatslasher.mp4": "/static/media/beatslasher.d257ac34489fd0c5e69f.mp4",
     "static/media/SSVEP.mp4": "/static/media/SSVEP.6c628fd41c59ecf41611.mp4",
@@ -13,7 +13,6 @@
     "static/media/python.png": "/static/media/python.82efb64f8698a267f8bf.png",
     "static/media/threejs.png": "/static/media/threejs.7c862b1bad8407d307b0.png",
     "static/media/node.png": "/static/media/node.fc3bd1ec69d7a50e685a.png",
-    "static/media/BASH.png": "/static/media/BASH.c8dfb1563816a3e8781a.png",
     "static/media/Angular.png": "/static/media/Angular.b6d2a9dec3e43e0ffb95.png",
     "static/media/abogo.jpeg": "/static/media/abogo.46902639022320a3d5a8.jpeg",
     "static/media/Cpp.png": "/static/media/Cpp.d8d9a2f879d60721c1ac.png",
@@ -25,20 +24,21 @@
     "static/media/addressbook.png": "/static/media/addressbook.88d40d13048bbe989445.png",
     "static/media/bearworks.png": "/static/media/bearworks.9929c9d0ab412ebd2cbf.png",
     "static/media/TS.png": "/static/media/TS.52ea0bc40ba11d507e7d.png",
-    "static/media/redis.png": "/static/media/redis.a7599887a32d5b088d69.png",
     "static/media/Linux.png": "/static/media/Linux.24a26a2ec29c2e987464.png",
     "static/media/smartARM.png": "/static/media/smartARM.a2d5407e204733bd98e3.png",
     "static/media/C_Logo.png": "/static/media/C_Logo.bbbbbabc8c191bfb99bf.png",
+    "static/media/pytorch.png": "/static/media/pytorch.60b442fca888e33b69c8.png",
     "static/media/webdev.png": "/static/media/webdev.85e6eee999d990d1d147.png",
     "static/media/aws.png": "/static/media/aws.e5c7cd7792f1a4d5a4fe.png",
+    "static/media/centml.png": "/static/media/centml.b9fda5f9a44266161df2.png",
     "static/media/extend.png": "/static/media/extend.3ec45dc91eeca91a2b16.png",
     "static/media/dotNET.png": "/static/media/dotNET.2c9ca9e4a5664a0908ab.png",
     "index.html": "/index.html",
-    "main.762eca6c.css.map": "/static/css/main.762eca6c.css.map",
-    "main.56cc652a.js.map": "/static/js/main.56cc652a.js.map"
+    "main.6efb98c1.css.map": "/static/css/main.6efb98c1.css.map",
+    "main.d6476b13.js.map": "/static/js/main.d6476b13.js.map"
   },
   "entrypoints": [
-    "static/css/main.762eca6c.css",
-    "static/js/main.56cc652a.js"
+    "static/css/main.6efb98c1.css",
+    "static/js/main.d6476b13.js"
   ]
 }
